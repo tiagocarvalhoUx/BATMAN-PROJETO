@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de feedback</title>
+    <link rel="stylesheet" type="text/css" href="comentarios.html"/>
+</head>
+
+<body>
+    <div>
+        <div class="comentario-form-wrapper d-flex justify-content-center">
+          <form action="#" class="comentario-form">
+    <H1 class="title">Comentários</H1>
+    <p class="description">Faça seu comentário sobre o filme
+    </p>
+    </div>
+    <FORM action="mailto:simon.long@cit.ie" method="post" enctype="text/plain">
+      Nome: <INPUT type="text" name="firstname" placeholder="Insira o nome aqui">
+      Segundo nome: <INPUT type="text" name="secondname" placeholder="Insira o sobrenome aqui">
+      <BR>
+      <BR>
+      <!--É importante que ambos os botões de opção tenham o mesmo nome para que se comportem como um componente (ou seja, apenas um pode ser selecionado por vez)-->  
+      <INPUT type="radio" name="gender" value="male">Masculino<BR>
+      <INPUT type="radio" name="gender" value="female">Feminino<BR>  
+      <BR>
+      <BR>
+      <!--Isto usa o novo tipo de ENTRADA "email" HTML que validará automaticamente o endereço de e-mail quando o botão ENVIAR for clicado-->
+      e-mail: <INPUT type="email" name="mail" placeholder="endereço de e-mail">
+      <BR>
+      <BR>
+        Comentário:<BR>        
+        <TEXTAREA rows="6" cols="50" name="commentfield"></TEXTAREA>
+        <BR>
+        <SELECT name="Capital">
+          <OPTION value="São Paulo">São Paulo</OPTION>
+          <OPTION value="Rio de Janeiro">Rio de Janeiro</OPTION>
+          <OPTION value="Curitiba">Curitiba</OPTION>
+          <OPTION value="Florianópolis">Florianópolis</OPTION>
+        </SELECT>
+        <BR>
+        <BR>
+        <INPUT TYPE="enviar" valor="Enviar feedback">
+        <INPUT TYPE="redefinir" valor="Redefinir">
+    </FORM>
+    
+</body>
+</html>
